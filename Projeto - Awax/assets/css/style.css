@@ -576,7 +576,6 @@ CSS DE ÁREAS ESPECIFICAS DE CADA SESSÃO
 .companies .section-body{
     padding-top: 17px;
     padding-bottom: 17px;
-    width: 1140px;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -604,8 +603,7 @@ CSS DE ÁREAS ESPECIFICAS DE CADA SESSÃO
     padding-bottom: 50px;
 }
 .section-price {
-   width: 100vw;
-    
+   display: flex; 
 }
 .section-price .sliders {
     width: 1140px;
@@ -616,25 +614,31 @@ CSS DE ÁREAS ESPECIFICAS DE CADA SESSÃO
     align-items: center;
 }
 .section-price .slide {
-    width: 230px;
+    
+    
     height: 100%;
     min-height: 300px;
     display: inline-flex;
-    background-color: #fff;
-    margin-right: 25px;
-    box-shadow: #333 5px 5px 2px 1px;
-    transition: .4s;
+    
+    
+    
+    
 }
-.section-price .slidearea {
+.section-price .section-price-item {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex: 1;
+    width: 230px;
     justify-content: center;
     align-items: center;
     color: #000;
-    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: #333 5px 5px 2px 1px;
+    padding: 20px;
+    margin-right: 25px;
+    transition: .4s;
 }
-.section-price .slide:hover {
+.section-price .section-price-item:hover {
     transform: scale(1.1);
 }
 .section-price .price-title {
